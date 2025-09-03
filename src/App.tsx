@@ -14,7 +14,8 @@ function App() {
   const [balance, setBalance] = useState<number | null>(null);
   const [transactions, setTransactions] = useState<Transaction[]>([]);
   const [subscriptionIds, setSubscriptionIds] = useState<number[]>([]);
-
+  
+  //when track transactions in real time, work in settimer
   const handleTrack = async () => {
     if (!wallet) return;
 
